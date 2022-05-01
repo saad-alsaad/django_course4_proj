@@ -16,3 +16,5 @@ def index(request):
     g = Github(request.user.profile.token)
 
     return render(request, "index.html", {"github_user": g.get_user()})
+
+    
